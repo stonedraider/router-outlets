@@ -5,14 +5,18 @@ import { CommonModule } from "@angular/common";
 import { SidenavigationComponent } from "./components/sidenavigation/sidenavigation.component";
 
 const appRoutes: Routes = [
+    // {
+    //     path: "",
+    //     redirectTo: "buildings/cockpit",
+    //     pathMatch: "full"
+    // },
+    // {
+    //     path: "buildings/:panel",
+    //     component: SidenavigationComponent,
+    // },
     {
         path: "",
-        redirectTo: "buildings/cockpit",
-        pathMatch: "full"
-    },
-    {
-        path: "buildings/:panel",
-        component: SidenavigationComponent,
+        component: SidenavigationComponent
     },
     {
         path: "feature-component",
@@ -27,7 +31,7 @@ const appRoutes: Routes = [
         RouterModule.forRoot(
             appRoutes,
             {
-                enableTracing: false
+                enableTracing: true
             }
         )
     ],
