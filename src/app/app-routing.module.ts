@@ -18,7 +18,7 @@ const appRoutes: Routes = [
         path: "feature-component",
         loadChildren: "./modules/building/building.module#BuildingModule",
         outlet: "buildingDetails"
-      }
+    }
 ];
 
 @NgModule({

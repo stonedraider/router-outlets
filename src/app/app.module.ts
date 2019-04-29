@@ -6,13 +6,11 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from './components/app/app.component';
 import { SidenavigationComponent } from './components/sidenavigation/sidenavigation.component';
-import { BuildingDetailsComponent } from './modules/building/components/building-details/building-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavigationComponent,
-    BuildingDetailsComponent
+    SidenavigationComponent
   ],
   imports: [
     BrowserModule,
