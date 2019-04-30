@@ -7,22 +7,20 @@ import { SidenavigationComponent } from "./components/sidenavigation/sidenavigat
 const appRoutes: Routes = [
     // {
     //     path: "",
-    //     redirectTo: "buildings/cockpit",
+    //     redirectTo: "sidenavigation",
     //     pathMatch: "full"
-    // },
-    // {
-    //     path: "buildings/:panel",
-    //     component: SidenavigationComponent,
     // },
     {
         path: "",
-        component: SidenavigationComponent
+        component: SidenavigationComponent,
+        children: [
+            {
+                path: "feature-component",
+                loadChildren: "src/app/modules/building/building.module#BuildingModule",
+                // outlet: "buildingDetails"
+            }
+        ]
     },
-    {
-        path: "feature-component",
-        loadChildren: "./modules/building/building.module#BuildingModule",
-        outlet: "buildingDetails"
-    }
 ];
 
 @NgModule({
