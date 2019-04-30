@@ -5,13 +5,13 @@ import { CommonModule } from "@angular/common";
 import { SidenavigationComponent } from "./components/sidenavigation/sidenavigation.component";
 
 const appRoutes: Routes = [
-    // {
-    //     path: "",
-    //     redirectTo: "sidenavigation",
-    //     pathMatch: "full"
-    // },
     {
         path: "",
+        redirectTo: "sidenavigation",
+        pathMatch: "full"
+    },
+    {
+        path: "sidenavigation",
         component: SidenavigationComponent,
         children: [
             {
