@@ -17,7 +17,8 @@ export class SidenavigationComponent implements OnInit {
 
   public openBuildingDetails() {
     console.log("openBuildingDetails()");
-    this.router.navigate([{ outlets: { buildingDetails: "feature-component" } }]);
+    // this.router.navigate([{ outlets: { buildingDetails: "/sidenavigation/feature-component" } }]);
+    this.router.navigate(["/sidenavigation/feature-component"]);
   }
 
 }
